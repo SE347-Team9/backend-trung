@@ -45,7 +45,15 @@ INSTALLED_APPS = [
     
     # Local apps
     'accounts',
+    'agencies',
+    'products',
+    'orders',
+    'payments',
+    'reports',
 ]
+
+# Custom User Model - Quan trọng: Phải khai báo trước khi migrate
+AUTH_USER_MODEL = 'accounts.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
